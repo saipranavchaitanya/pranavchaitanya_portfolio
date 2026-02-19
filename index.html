@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-    body { font-family: 'Inter', system_ui, sans-serif; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
     .hero-bg { background: linear-gradient(135deg, #0A2540 0%, #1E3A8A 100%); }
     .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
     .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
@@ -19,7 +19,7 @@
   <!-- Navbar -->
   <nav class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-      <h1 class="text-2xl font-bold tracking-tight">A.N.S PRANAV CHAITANYA<span class="text-teal-600">.</span></h1>
+      <h1 class="text-2xl font-bold tracking-tight">Pranav<span class="text-teal-600">.</span></h1>
       <div class="hidden md:flex gap-8 font-medium">
         <a href="#about" class="hover:text-teal-600 transition">About</a>
         <a href="#skills" class="hover:text-teal-600 transition">Skills</a>
@@ -28,35 +28,34 @@
         <a href="#education" class="hover:text-teal-600 transition">Education</a>
         <a href="#contact" class="hover:text-teal-600 transition">Contact</a>
       </div>
-      <a href="YOUR-RESUME.pdf" download class="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-xl font-medium flex items-center gap-2 transition">
+      <a href="ANS-PRANAV-CHAITANYA-Resume.pdf" download class="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-xl font-medium flex items-center gap-2 transition">
         <i class="fa-solid fa-download"></i> Resume
       </a>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="hero-bg text-white min-h-screen flex items-center">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h2 class="text-teal-400 font-medium tracking-widest mb-3">Aspiring DATA ANALYST • BUSINESS ANALYTICS</h2>
-        <h1 class="text-6xl md:text-7xl font-bold leading-none mb-6">A.N.S.PRANAV CHAITANYA</h1>
-        <p class="text-2xl text-zinc-300 mb-8">Turning raw data into clear, actionable business insights and dashboads</p>
-        <div class="flex gap-4">
-          <a href="#projects" class="bg-white text-zinc-900 px-8 py-4 rounded-2xl font-semibold hover:bg-zinc-100 transition">View Projects</a>
-          <a href="#contact" class="border border-white/70 hover:bg-white/10 px-8 py-4 rounded-2xl font-semibold transition">Get in touch</a>
-        </div>
+  <!-- Hero – No photo version (full width text) -->
+  <header class="hero-bg text-white py-32 md:py-48 flex items-center">
+    <div class="max-w-6xl mx-auto px-6 text-center md:text-left">
+      <h2 class="text-teal-400 font-medium tracking-widest mb-4 uppercase">Data Analyst • Business Analytics</h2>
+      <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">ANS Pranav Chaitanya</h1>
+      <p class="text-2xl md:text-3xl text-zinc-200 mb-10 max-w-3xl mx-auto md:mx-0">
+        Transforming raw data into clear, actionable business insights through analysis, visualization & storytelling
+      </p>
+      <div class="flex flex-col sm:flex-row gap-5 justify-center md:justify-start">
+        <a href="#projects" class="bg-white text-zinc-900 px-8 py-4 rounded-2xl font-semibold hover:bg-zinc-100 transition shadow-lg">Explore Projects</a>
+        <a href="#contact" class="border border-white/70 hover:bg-white/10 px-8 py-4 rounded-2xl font-semibold transition">Get in Touch</a>
       </div>
-      <!-- Add your photo here later -->
-      
     </div>
   </header>
 
   <!-- About / Professional Summary -->
   <section id="about" class="py-24 bg-white">
     <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-4xl font-bold mb-10 text-center">About Me</h2>
-      <div class="text-lg leading-relaxed text-zinc-600">
-        <p>Aspiring Data Analyst and Business Analytics with hands-on experience in data analysis, ETL-style data preparation, exploratory data analysis, KPI reporting, and dashboard development. Proficient in Python, SQL, Excel, Power BI, and Tableau for data cleaning, validation, trend analysis, and stakeholder-ready reporting to support data-driven business decisions.</p>
+      <h2 class="text-4xl font-bold mb-10 text-center">Professional Summary</h2>
+      <div class="text-lg leading-relaxed text-zinc-700 space-y-6">
+        <p>Data Analyst and Business Analytics undergraduate with hands-on experience in data analysis, ETL-style data preparation, exploratory data analysis, KPI reporting, and dashboard development.</p>
+        <p>Proficient in Python, SQL, Excel, Power BI, and Tableau — skilled at data cleaning, validation, trend analysis, and creating stakeholder-ready reports to drive informed business decisions.</p>
       </div>
     </div>
   </section>
@@ -64,31 +63,28 @@
   <!-- Skills -->
   <section id="skills" class="py-24 bg-zinc-100">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-16">Skills</h2>
+      <h2 class="text-4xl font-bold text-center mb-16">Technical Skills</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-        <!-- Frontend (Visualization) -->
         <div class="bg-white p-8 rounded-3xl card-hover">
-          <h3 class="font-semibold text-xl mb-6 flex items-center gap-3"><i class="fa-solid fa-chart-line text-teal-600"></i> Frontend (Visualization)</h3>
+          <h3 class="font-semibold text-xl mb-6 flex items-center gap-3"><i class="fa-solid fa-chart-line text-teal-600"></i> Visualization</h3>
           <ul class="space-y-3 text-zinc-600">
             <li>• Power BI (DAX, Data Modeling, Slicers, Drill-downs)</li>
-            <li>• Tableau Dashboard Development</li>
-            <li>• Excel (Pivot Tables, XLOOKUP, Charts)</li>
+            <li>• Tableau (Interactive Dashboards)</li>
+            <li>• Excel (Pivot Tables, XLOOKUP, Advanced Charts)</li>
           </ul>
         </div>
 
-        <!-- Backend (Data Processing) -->
         <div class="bg-white p-8 rounded-3xl card-hover">
-          <h3 class="font-semibold text-xl mb-6 flex items-center gap-3"><i class="fa-solid fa-database text-teal-600"></i> Backend (Data Processing)</h3>
+          <h3 class="font-semibold text-xl mb-6 flex items-center gap-3"><i class="fa-solid fa-database text-teal-600"></i> Data Processing</h3>
           <ul class="space-y-3 text-zinc-600">
             <li>• Python (Pandas, NumPy, Matplotlib)</li>
-            <li>• SQL (Joins, CTEs, Aggregations, Window Functions)</li>
+            <li>• SQL (Joins, CTEs, Aggregations, Grouping)</li>
           </ul>
         </div>
 
-        <!-- Tools -->
         <div class="bg-white p-8 rounded-3xl card-hover">
-          <h3 class="font-semibold text-xl mb-6 flex items-center gap-3"><i class="fa-solid fa-tools text-teal-600"></i> Tools</h3>
+          <h3 class="font-semibold text-xl mb-6 flex items-center gap-3"><i class="fa-solid fa-tools text-teal-600"></i> Tools & Environment</h3>
           <ul class="space-y-3 text-zinc-600">
             <li>• Git & GitHub</li>
             <li>• Jupyter Notebook / Google Colab</li>
@@ -96,14 +92,13 @@
           </ul>
         </div>
 
-        <!-- Frameworks & Practices -->
         <div class="bg-white p-8 rounded-3xl card-hover">
-          <h3 class="font-semibold text-xl mb-6 flex items-center gap-3"><i class="fa-solid fa-cubes text-teal-600"></i> Frameworks & Practices</h3>
+          <h3 class="font-semibold text-xl mb-6 flex items-center gap-3"><i class="fa-solid fa-cubes text-teal-600"></i> Analytics Practices</h3>
           <ul class="space-y-3 text-zinc-600">
-            <li>• EDA & Trend Analysis</li>
-            <li>• KPI Reporting & Storytelling</li>
-            <li>• Data Cleaning & Validation</li>
-            <li>• Documentation & Version Control</li>
+            <li>• Exploratory Data Analysis (EDA)</li>
+            <li>• KPI Development & Trend Analysis</li>
+            <li>• Data Cleaning, Validation & Quality Checks</li>
+            <li>• Business Reporting & Storytelling</li>
           </ul>
         </div>
       </div>
@@ -117,66 +112,54 @@
 
       <div class="grid md:grid-cols-3 gap-10">
 
-        <!-- Project 1 -->
+        <!-- Blinkit -->
         <div class="bg-zinc-50 rounded-3xl overflow-hidden card-hover">
-          <div class="h-52 bg-gradient-to-br from-blue-400 to-teal-500 flex items-center justify-center">
-            <span class="text-white text-5xl font-light">Blinkit</span>
-          </div>
-          <div class="p-8">
+          <img src="https://softwareconnect.com/images/power-bi-examples-359177?w=1200&h=627" alt="Blinkit Sales Analytics Dashboard" class="w-full h-52 object-cover">
+          <div class="p-7">
             <h3 class="font-semibold text-2xl mb-3">Blinkit Sales Analytics Dashboard</h3>
-            <p class="text-zinc-600 mb-6">Automated KPI tracking dashboard that reduced manual reporting effort by ~40%.</p>
-            <div class="flex flex-wrap gap-2 mb-8">
-              <span class="text-xs bg-white px-4 py-1 rounded-full border">Power BI</span>
-              <span class="text-xs bg-white px-4 py-1 rounded-full border">Python</span>
-              <span class="text-xs bg-white px-4 py-1 rounded-full border">DAX</span>
+            <p class="text-zinc-600 mb-5">Designed Power BI dashboard tracking revenue, orders, customer engagement KPIs with DAX measures. Reduced manual reporting by ~40%.</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Power BI</span>
+              <span class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Python</span>
+              <span class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">DAX</span>
             </div>
-            <div class="flex gap-4">
-              <a href="https://github.com/pranavchaitanya/blinkit-sales-dashboard" target="_blank" class="text-teal-600 hover:underline flex items-center gap-2">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </div>
+            <a href="https://github.com/pranavchaitanya/blinkit-sales-dashboard" target="_blank" class="text-teal-600 hover:underline flex items-center gap-2 font-medium">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
           </div>
         </div>
 
-        <!-- Project 2 -->
+        <!-- IPL -->
         <div class="bg-zinc-50 rounded-3xl overflow-hidden card-hover">
-          <div class="h-52 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
-            <span class="text-white text-5xl font-light">IPL</span>
-          </div>
-          <div class="p-8">
+          <img src="https://miro.medium.com/1*_J8LmIjvl9Gin7Da-cotBA.png" alt="IPL Performance Dashboard" class="w-full h-52 object-cover">
+          <div class="p-7">
             <h3 class="font-semibold text-2xl mb-3">IPL Performance & Trend Analysis</h3>
-            <p class="text-zinc-600 mb-6">Exploratory analysis of match data to uncover venue impact, team strengths, and seasonal trends.</p>
-            <div class="flex flex-wrap gap-2 mb-8">
-              <span class="text-xs bg-white px-4 py-1 rounded-full border">Python</span>
-              <span class="text-xs bg-white px-4 py-1 rounded-full border">SQL</span>
-              <span class="text-xs bg-white px-4 py-1 rounded-full border">Power BI</span>
+            <p class="text-zinc-600 mb-5">Analyzed match data (2008–2022) for team performance, venue impact, seasonal trends using Python, SQL & Power BI dashboards.</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Python</span>
+              <span class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">SQL</span>
+              <span class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Power BI</span>
             </div>
-            <div class="flex gap-4">
-              <a href="https://github.com/pranavchaitanya/ipl-performance-analysis" target="_blank" class="text-teal-600 hover:underline flex items-center gap-2">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </div>
+            <a href="https://github.com/pranavchaitanya/ipl-performance-analysis" target="_blank" class="text-teal-600 hover:underline flex items-center gap-2 font-medium">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
           </div>
         </div>
 
-        <!-- Project 3 -->
+        <!-- Uber -->
         <div class="bg-zinc-50 rounded-3xl overflow-hidden card-hover">
-          <div class="h-52 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
-            <span class="text-white text-5xl font-light">Uber</span>
-          </div>
-          <div class="p-8">
+          <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfveS-AqcQ00re8ohjXhybD8H5D_H2xnoeKsUIv5o4Wf52UzwCNBlWDOnHbnXQ_ml5C27oW8rLeSk6Tx1jHiDMXU2u0ZUivUsUWP7M5YF_y2x9hHPlzI-LTnS4RZ4QzQbfFiAQK?key=-hoNndQT5ON4JFskigZPXw" alt="Uber Rides Analysis Dashboard" class="w-full h-52 object-cover">
+          <div class="p-7">
             <h3 class="font-semibold text-2xl mb-3">Uber Rides Data Analysis</h3>
-            <p class="text-zinc-600 mb-6">Peak-hour analysis and user behavior insights using Python and Power BI.</p>
-            <div class="flex flex-wrap gap-2 mb-8">
-              <span class="text-xs bg-white px-4 py-1 rounded-full border">Python</span>
-              <span class="text-xs bg-white px-4 py-1 rounded-full border">Power BI</span>
-              <span class="text-xs bg-white px-4 py-1 rounded-full border">Matplotlib</span>
+            <p class="text-zinc-600 mb-5">Explored peak hours, ride purposes & user behavior patterns using Pandas, Matplotlib & interactive Power BI dashboards.</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Python</span>
+              <span class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Power BI</span>
+              <span class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Matplotlib</span>
             </div>
-            <div class="flex gap-4">
-              <a href="https://github.com/pranavchaitanya/uber-rides-analysis" target="_blank" class="text-teal-600 hover:underline flex items-center gap-2">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </div>
+            <a href="https://github.com/pranavchaitanya/uber-rides-analysis" target="_blank" class="text-teal-600 hover:underline flex items-center gap-2 font-medium">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
           </div>
         </div>
 
@@ -188,36 +171,36 @@
   <section id="experience" class="py-24 bg-zinc-100">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-4xl font-bold text-center mb-16">Experience</h2>
-      <div class="max-w-3xl mx-auto space-y-16">
+      <div class="max-w-4xl mx-auto space-y-16">
 
-        <div>
-          <div class="flex justify-between items-start mb-4">
+        <div class="bg-white p-8 rounded-3xl shadow-sm">
+          <div class="flex flex-col md:flex-row justify-between mb-4">
             <div>
               <h4 class="font-semibold text-xl">Data Science Intern</h4>
-              <p class="text-teal-600">Edu Tantr • Bangalore</p>
+              <p class="text-teal-600 font-medium">Edu Tantr, Bangalore</p>
             </div>
-            <p class="text-zinc-500">Jun 2025 – Sep 2025</p>
+            <p class="text-zinc-500 mt-2 md:mt-0">Jun 2025 – Sep 2025</p>
           </div>
-          <ul class="list-disc pl-6 space-y-2 text-zinc-600">
-            <li>Conducted end-to-end analysis on business datasets using Python, SQL & Excel</li>
-            <li>Built Power BI dashboard with KPIs, slicers and drill-downs</li>
-            <li>Wrote optimized SQL queries for revenue and regional performance analysis</li>
-            <li>Published dashboards and notebooks on GitHub</li>
+          <ul class="list-disc pl-6 space-y-2.5 text-zinc-700">
+            <li>End-to-end analysis of business datasets using Python (Pandas), SQL (MySQL), and Excel</li>
+            <li>Developed Power BI dashboard with KPIs, slicers, drill-downs for category, region & product performance</li>
+            <li>Optimized SQL queries for revenue trends, regional & product profitability analysis</li>
+            <li>Published dashboards, queries & notebooks on GitHub for documentation & team reuse</li>
           </ul>
         </div>
 
-        <div>
-          <div class="flex justify-between items-start mb-4">
+        <div class="bg-white p-8 rounded-3xl shadow-sm">
+          <div class="flex flex-col md:flex-row justify-between mb-4">
             <div>
               <h4 class="font-semibold text-xl">Data Analytics Job Simulation</h4>
-              <p class="text-teal-600">Deloitte (Forage) • Remote</p>
+              <p class="text-teal-600 font-medium">Deloitte (Forage) – Virtual / Remote</p>
             </div>
-            <p class="text-zinc-500">Apr 2025 – Oct 2025</p>
+            <p class="text-zinc-500 mt-2 md:mt-0">Apr 2025 – Oct 2025</p>
           </div>
-          <ul class="list-disc pl-6 space-y-2 text-zinc-600">
-            <li>Forensic data analysis to identify anomalies and risk indicators</li>
-            <li>Built interactive Tableau dashboard for executive decision-making</li>
-            <li>Data cleaning and validation in Excel</li>
+          <ul class="list-disc pl-6 space-y-2.5 text-zinc-700">
+            <li>Performed forensic data analysis to detect anomalies and risk indicators</li>
+            <li>Built interactive Tableau dashboard to visualize insights for executive decision-making</li>
+            <li>Cleaned & validated datasets in Excel to improve accuracy & clarity</li>
           </ul>
         </div>
 
@@ -229,14 +212,14 @@
   <section id="education" class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-4xl font-bold text-center mb-16">Education</h2>
-      <div class="grid md:grid-cols-2 gap-12 max-w-3xl mx-auto">
-        <div>
-          <h4 class="font-semibold text-xl">B.Tech in Computer Science</h4>
+      <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        <div class="bg-zinc-50 p-8 rounded-3xl">
+          <h4 class="font-semibold text-xl mb-2">B.Tech in Computer Science</h4>
           <p class="text-teal-600">Madanapalli Institute of Technology and Sciences</p>
           <p class="text-zinc-500">Aug 2023 – May 2027 • Madanapalli, AP</p>
         </div>
-        <div>
-          <h4 class="font-semibold text-xl">Class 12 – State Board</h4>
+        <div class="bg-zinc-50 p-8 rounded-3xl">
+          <h4 class="font-semibold text-xl mb-2">Class 12 – State Board</h4>
           <p class="text-teal-600">Sri Chaitanya Jr College</p>
           <p class="text-zinc-500">Sep 2021 – Mar 2023 • Madanapalli, AP</p>
         </div>
@@ -248,24 +231,19 @@
   <section id="contact" class="py-24 bg-zinc-900 text-white">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <h2 class="text-4xl font-bold mb-6">Let's Connect</h2>
-      <p class="text-zinc-400 mb-12">Open to data analyst roles, internships, and interesting projects.</p>
+      <p class="text-zinc-300 mb-10 max-w-2xl mx-auto">Open to full-time data analyst roles, internships, freelance analytics projects, and interesting collaborations.</p>
       <div class="flex flex-wrap justify-center gap-10 text-4xl">
         <a href="https://linkedin.com/in/anspranavchaitanya" target="_blank" class="hover:text-teal-400 transition"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/pranavchaitanya" target="_blank" class="hover:text-teal-400 transition"><i class="fa-brands fa-github"></i></a>
         <a href="mailto:anspranavchaitanya@gmail.com" class="hover:text-teal-400 transition"><i class="fa-solid fa-envelope"></i></a>
         <a href="tel:+919182091181" class="hover:text-teal-400 transition"><i class="fa-solid fa-phone"></i></a>
-        
       </div>
     </div>
   </section>
 
-  <footer class="bg-white py-8 text-center text-sm text-zinc-500">
-    © 2026 Pranav Chaitanya • Built as a single-file portfolio
+  <footer class="bg-white py-8 text-center text-sm text-zinc-500 border-t">
+    © 2026 ANS Pranav Chaitanya • Built with focus on clean data storytelling
   </footer>
 
-  <script>
-    // Simple mobile menu can be added later if needed
-    // Tailwind already handles responsiveness
-  </script>
 </body>
 </html>
